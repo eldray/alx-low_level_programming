@@ -3,17 +3,16 @@
  *main - print alphabet in upper and lower
  *
  * Return: zero
- * /
- int main(void)
- {
+ */
+int main(void)
+{
 	char ch;
-	char ch
+	char Ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
-	putchar(ch);
-
-	vi 
-	 	putchar(CH);
+		putchar(ch);
+	for (CH = 'A'; CH <= 'Z'; CH++)
+		putchar(CH);
 	putchar('\n');
-	return (0)
+	return (0);
 }

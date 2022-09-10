@@ -12,9 +12,9 @@ int main(void)
 }
 	if (alpha == 'e' || alpha == 'q'
 		{
-		continue
+		continue;
 		}
 		putchar(alpha);
 		putchar('\n')
 	return (0);
-kii}
+}

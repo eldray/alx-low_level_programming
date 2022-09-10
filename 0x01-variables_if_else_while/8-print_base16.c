@@ -8,13 +8,11 @@
 int main(void)
 { 
 	int i;
-	for (i = 48; i < 58; i++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(i);
+		printf("%d", i);
 	}
-	for (i = 97; i < 103; i++)
-	{
-		putchar 9=(i);
-	}
-	putchar('\n');
+	printf('\n')
+	
 	return (0);
+}

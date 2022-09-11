@@ -1,28 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 0 to 9 an letters between a and f.
+ * main - Entry Point
  *
- * Retun: Always o (Success)
+ * Retun: 0 Success
  */
 int main(void)
-{ 
-	int i;
-	char letter;
-	
-	for (i = 0; i < 10; i++)
-	
-	{
-		putchar ((i % 10) +'0');
-	}
 
-	for (letter = 'a'; letter <= 'f';  letter++)
+{
+char base_16;
 
-	}
-	{
-		putchar (letter);
-	}
-	putchar('\n')
-	
-	return (0);
+for (base_16 = 48; base_16 <= 57; base_16++)
+(putchar(base_16);	
+	 }
+for (base_16 = 97; base_16 <= 102; base_16++)
+	 {
+putcharr(base_16);
+	 }
+putchar('\n');
+
+return (0);
 }

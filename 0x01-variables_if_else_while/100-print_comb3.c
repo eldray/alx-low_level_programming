@@ -1,22 +1,24 @@
 #include <stdio.h>
 /**
- * main - Prints numbers between 0 to 89.
+ * main - Prints combination of numbers
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int digit1, digit2;
+	int c, i;
 
-	for (digit = 0; digit1 < 9; digit++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+		for (i = '0'; i <= '9'; i++)
 	{
-		putchar((digit1 % 10) + '0');
-		putchar((digit2 % 10) + '0');
 
-		if (digit1 == 8 && digit2 == 9)
-			continue
+		if (c < i)
+		putchar(c);
+		putchar(i);
+
+		if (c != '8' || (c == '8' && i != '9'))
+		{
 
 			putchar(',')
 			putchar(' ');

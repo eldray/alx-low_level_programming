@@ -2,7 +2,7 @@
 
 /*
  * print_alphabet - Prints all the alphabets, a-z
- *   
+ *
  * Return: always 0 success
  */
 void print_alphabet(void)
@@ -12,9 +12,9 @@ void print_alphabet(void)
 		alpha = 'a';
 
 				while (alpha <= 'z')
-						{
-									_putchar((int) alpha);
-											alpha++;
-												}
-					_putchar((char) 10);
+				{
+					_putchar((int) alpha;
+					alpha++;
+				}
+				_putchar((char) 10);
 }

@@ -7,15 +7,14 @@
 int main(void)
 	{
 		char string[] = "_putchar";
-		int i;
+		int n = 0;
 
-		i = 0
-			while (str[i])
-			{
-				_putchar(str[i]);
-				++i;
-			}
-		_putchar('\n');
+			while (n < 8)
+				{
+				_putchar(str[n]);
+				++n;
+				}
+		_putchar('10');
 
 		return (0);
 	}

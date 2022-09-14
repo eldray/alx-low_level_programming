@@ -1,20 +1,21 @@
 #include "main.h"
 /**
- * main -Print out main car by char
- * deescription: uses the main header file
+ * main -Print out putchar
+ * deescription: uses the main header fil
  * Return: 0
  */
 int main(void)
-	{
-		char string[] = "_putchar";
-		int n = 0;
-
-			while (n < 8)
-				{
-				_putchar(str[n]);
-				++n;
-				}
-		_putchar('10');
+	{		
+		_putchar('_');
+		_putchar('p');
+		_putchar('u');
+		_putchar('t');
+		_putchar('c');
+		_putchar('h');
+		_putchar('a');
+		_putchar('a');
+		_putchar('r');
+		_putchar('\n');
 
 		return (0);
 	}

@@ -1,20 +1,24 @@
- #include "main.h"
+#include "main.h"
 
-/*
- * print_alphabet - Prints all the alphabets, a-z
+/**
+ * print_alphabet - function to print abc
  *
- * Return: always 0 success
+ * Return: 0
+ *
  */
+
 void print_alphabet(void)
+
 {
-	char alpha;
 
-		alpha = 'a';
+		char c;
 
-				while (alpha <= 'z')
-				{
-					_putchar((int) alpha;
-					alpha++;
-				}
-				_putchar((char) 10);
+			for (c = 'a'; c <= 'z'; c++)
+{
+			_putchar(c);
 }
+			_putchar('\n');
+
+}
+
+

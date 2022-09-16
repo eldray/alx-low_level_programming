@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  *print_line - prints a line with the length being the input

@@ -14,21 +14,16 @@ void print_number(int n)
 		div = 1;
 
 	if (n < 0)
-	{
-		_putchar('-');
-	}
+	{_putchar('-');	}
 
 	if (n == 0)
-	{
-		_putchar('0');
-	}
+	{_putchar('0');	}
 
 	else
 	{
 		temp = n;
 	while (temp)
-		{
-			temp /= 10;
+		{	temp /= 10;
 			++cnt;
 		}
 		temp2 = cnt;

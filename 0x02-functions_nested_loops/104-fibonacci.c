@@ -1,96 +1,55 @@
-#include <stdlib.h>
-
 #include <stdio.h>
 
 /**
  *
- * main - print out 98 fib numbers starting with 1, 2
+ * main - Entry point
  *
- * Description: Not allowed to use type long long so
- *
- * had to cut both numbers in 2 after certain point then had to account
- *
- * for when the bottom part of number would overflow to the top part.
- *
- * Return: Description of the returned value
+ * Return: end program
  */
 
 int main(void)
 
 {
-	int i, flag;
+		unsigned long int i, j, k, j1, j2, k1, k2;
 
-	unsigned long n1, n2, t, rem, fp_n2, sp_n2, fp_n1, sp_n1, t1, t2;
+			j = 1;
+				k = 2;
+					printf("%lu", j);
 
-	n1 = 0;
+						for (i = 1; i < 91; i++)
 
-	n2 = 1;
+											printf(", %lu", k);
+													k = k + j;
+															j = k - j;
+																}
 
-	flag = 0;
+							j1 = j / 1000000000;
 
-	for (i = 0; i < 98; ++i)
+								j2 = j % 1000000000;
 
-	{
+									k1 = k / 1000000000;
 
-		if (n2 < 1000000000000000000)
+										k2 = k % 1000000000;
 
-		{
+											for (i = 92; i < 99; ++i)
+													{
+																printf(", %lu", k1 + (k2 / 1000000000));
 
-			t =  n1 + n2;
+																		printf("%lu", k2 % 1000000000);
+																				k1 = k1 + j1;
 
-			printf("%lu, ", t);
+																						j1 = k1 - j1;
 
-			n1 = n2;
+																								k2 = k2 + j2;
 
-			n2 = t;
+																										j2 = k2 - j2;
 
-		}
+																											}
 
-		else
+												printf("\n");
 
-		{
 
-			if (flag++ == 0)
 
-			{
+													return (0);
 
-				fp_n2 = n2 / 10000000000;
-
-				sp_n2 = n2 % 10000000000;
-
-				fp_n1 = n1 / 10000000000;
-
-				sp_n1 = n1 % 10000000000;
-
-			}
-
-			t1 = fp_n1 + fp_n2;
-
-			t2 = sp_n1 + sp_n2;
-
-			rem = t2 / 10000000000;
-
-			t1 += rem;
-
-			t2 %= 10000000000;
-
-			if (i < 97)
-
-				printf("%lu%010lu, ", t1, t2);
-
-			fp_n1 = fp_n2;
-
-			sp_n1 = sp_n2;
-
-			fp_n2 = t1;
-
-			sp_n2 = t2;
-
-		}
-
-	}
-
-	printf("%lu%lu\n", t1, t2);
-
-	return (0);
 }

@@ -3,9 +3,9 @@
 /**
  * swap_int - Swaps the value of two integers
  *
- * @a= First Integer
+ * @a: First Integer
  *
- * @b= Second Integer
+ * @b: Second Integer
  *
  * Return: Always 0
  */

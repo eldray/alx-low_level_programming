@@ -29,7 +29,8 @@ int _strncmp(char *s1, char *s2, unsigned int b)
 
 /**
  * _strstr - locates a substring
- *
+ * @haystack: string to look though
+ * @needle: substring to find
  * Return: pointer to string with result of search
  */
 

@@ -1,60 +1,33 @@
-#include <main.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
- * _strncmp - compares two strings within b bytes.
+ * _strstr - finds the first occurance of a substring
  *
- * @s1: string to check
+ * @haystack: string to search in
  *
- * @s2: string to check from
+ * @needle: substring to look for
  *
- * @b: number of bytes to check
+ * Return: pointer to the beginning of the located substring
  *
- * Return: 0 if strings are the same
- *
- * any other number if they are different.
- */
-
-int _strncmp(char *s1, char *s2, unsigned int b)
-{
-	unsigned int i;
-
-	for (i = 0; i <= b && *s1 == *s2 && *s1 != '\0' && *s2 != '\0'; i++)
-	{
-		s1++;
-
-		s2++;
-	}
-	return (i - b);
-}
-
-/**
- * _strstr - locates a substring
- * @haystack: string to look though
- * @needle: substring to find
- * Return: pointer to string with result of search
+ * or NULL if the substring is not found
  */
 
 char *_strstr(char *haystack, char *needle)
+{	int i, j;
+
+for (i = 0; haystack[i] != '\0'; i++)
+
 {
-	unsigned int len;
-	/*Get length of needle for strncmp*/
+for (j = 0; needle[j] != '\0'; j++)
+{
+	if (haystack[i + j] != needle[j])
 
-	len = 0;
+		break;
 
-	while (needle[len] != '\0')
+}
+6if (!needle[j])
+return (&haystack[i]); }
 
-		len++;
-
-	/*compare substring*/
-
-	while (*haystack != '\0')
-	{
-
-		if (_strncmp(haystack, needle, len) == 0)
-
-			return (haystack);
-
-		haystack++;
-	}
-	return (NULL);
+return (NULL);
 }

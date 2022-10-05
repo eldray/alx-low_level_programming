@@ -1,13 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /*
- * a function that creates an array of chars
- * and initializes it with a specific char
+ * *create_array - array to print a string
  * @c: char to initialize the array with
  * @size: size of the array
- * Returns: Pointer to @char array
+ * Return: Pointer to @char array
  */
 
 char *create_array(unsigned int size, char c)

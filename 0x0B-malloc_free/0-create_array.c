@@ -5,7 +5,8 @@
 /*
  * a function that creates an array of chars
  * and initializes it with a specific char
- *
+ * @c: char to initialize the array with
+ * @size: size of the array
  * Returns: Pointer to @char array
  */
 

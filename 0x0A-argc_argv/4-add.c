@@ -3,13 +3,10 @@
 #include <ctype.h>
 
 /**
- *  main - adds numbers
- *
- *  @argc: number of arguments passed to the function
- *
+ * main - adds numbers
+ * @argc: number of arguments passed to the function
  * @argv: argument vector of pointers to strings
- *
- * myReturn: 0 if no errors, else 1
+ * Return: 0 if no errors, else 1
  */
 
 int main(int argc, char *argv[])

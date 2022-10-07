@@ -6,7 +6,7 @@
  * Return: buffer to print
  */
 
-void *malloc-checked(unsigned int b)
+void * malloc-checked(unsigned int b)
 {
 	void *p
 	p = malloc(b);

@@ -1,16 +1,17 @@
+#include "main.h"
 #include <stdlib>
 
 /*
- * *malloc-cheked - allocates memory to the checker
+ * malloc_checked: allocates memory to the malloc
  * @b : buffer size
- * Return: buffer to print
+ * Return: A pointer to the allocated memory
  */
 
-void * malloc-checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
-	void *p
-	p = malloc(b);
-	if (p == NULL)
+	void *mem = malloc(b);
+
+	if (mem == NULL)
 		exit(98);
-	return (p);
+return (mem);
 }

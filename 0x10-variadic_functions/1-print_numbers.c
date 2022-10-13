@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-/*
+/**
  * print_numbers - Prints numbers, followed by a new line.
  * @separator: The string to be printed btn numbers.
  * @n: The number of int passed to the func.

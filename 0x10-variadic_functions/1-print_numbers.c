@@ -9,21 +9,23 @@
  * @...: A var number of number to be printed.
  */
 
-void print_numbers(const char *separator, const unsine int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list nums;
+	int num;
+	va_list valist;
 	unsigned int index;
 
-	va_start(nums, n);
+	va_start(valist, n);
 
 	for (index = 0; index < n; index++)
 	{
-		printf("%d", va_arg(nums, int));
+		num = va_arg(valist, int);
+		printf("%d", num);
 
-		if (index != (n - 1) && separator != NULL)
+		if (index < (n - 1) && separator)
 			printf("%s", separator);
 	}
 	printf("\n");
 
-	va_end(nums);
+	va_end(valist);
 }

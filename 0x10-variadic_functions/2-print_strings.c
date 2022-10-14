@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (h < n - 1)
 
 			if
-		(separator)
+			(separator)
 
 	printf("%s", separator);
 	}
